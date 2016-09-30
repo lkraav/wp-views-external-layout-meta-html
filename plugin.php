@@ -45,7 +45,17 @@ final class WPV_External_Layout_Meta_HTML {
         );
 
         if ( $layout_meta_html = @file_get_contents( $layout_meta_html_file ) ) {
+
+            $layout_meta_html_debug = sprintf( "<!-- %s::%s -> %s -->\n",
+                __CLASS__,
+                __FUNCTION__,
+                str_replace( ABSPATH, '', $layout_meta_html_file )
+            );
+
+            $layout_meta_html = $layout_meta_html_debug . $layout_meta_html;
+
             $view_layout_settings['layout_meta_html'] = $layout_meta_html;
+
         }
 
         return $view_layout_settings;
