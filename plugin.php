@@ -54,6 +54,8 @@ final class WPV_External_Layout_Meta_HTML {
 
             $layout_meta_html = $layout_meta_html_debug . $layout_meta_html;
 
+            $layout_meta_html = implode( "\n", array_map( 'trim', explode( "\n", $layout_meta_html ) ) );
+
             $view_layout_settings['layout_meta_html'] = $layout_meta_html;
 
         }
