@@ -3,7 +3,7 @@
 Plugin Name: Toolset Views External Layout Meta HTML
 Plugin URI: https://conversionready.com
 Description: Filter view layout HTML definition with an external source
-Version: 2016.09.30
+Version: 2016.10.04
 Author: Leho Kraav
 Author URI: https://conversionready.com
 */
